@@ -63,6 +63,6 @@ Your contributions are welcome! If you have a unique business challenge, an inte
 
 ## 📬 Contact
 
-Email - ziregbemoses01@gmail.com
-[LinkedIn](https://www.linkedin.com/in/moses-ziregbe)
+- Email - ziregbemoses01@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/moses-ziregbe)
 ---
