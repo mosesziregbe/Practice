@@ -2,7 +2,7 @@ SET search_path to laptop_schema;
 
 
 
-/******* A. Price and Value Analysis *******/
+### A. Price and Value Analysis
 
 
 - **Q1: Average price of laptops for each brand**
