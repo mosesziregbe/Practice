@@ -71,7 +71,7 @@ FROM laptops;```
 -- Is there a significant price difference between laptops with 
 -- NVIDIA graphics cards and those with other graphics card?
 
-SELECT 
+```SELECT 
     CASE 
         WHEN graphics_card LIKE '%NVIDIA%' THEN 'NVIDIA Graphics'
         ELSE 'Other Graphics'
@@ -83,7 +83,7 @@ GROUP BY
     CASE 
         WHEN graphics_card LIKE '%NVIDIA%' THEN 'NVIDIA Graphics'
         ELSE 'Other Graphics'
-    END;
+    END;```
 
 | graphics_type   | laptop_count | average_price |
 |-----------------|--------------|---------------|
