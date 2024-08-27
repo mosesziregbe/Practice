@@ -51,8 +51,7 @@ ORDER BY avg_price DESC;
 | iBall     | 8000.00   |
 
 
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    
 - **Q2: Correlation between price and spec score**
 - What is the correlation between price and spec score?
