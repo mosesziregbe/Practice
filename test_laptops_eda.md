@@ -9,10 +9,10 @@ SET search_path to laptop_schema;
 -- What is the average price of laptops for each brand?
 
 
-SELECT brand, ROUND(AVG(price), 2) AS avg_price
+```SELECT brand, ROUND(AVG(price), 2) AS avg_price
 FROM laptops
 GROUP BY brand
-ORDER BY avg_price DESC;
+ORDER BY avg_price DESC;```
 
 
 | brand     | avg_price |
@@ -56,8 +56,8 @@ ORDER BY avg_price DESC;
 
 -- What is the correlation between price and spec score?
 
-SELECT ROUND(CORR(price, spec_score)::NUMERIC, 2) AS correlation
-FROM laptops;
+```SELECT ROUND(CORR(price, spec_score)::NUMERIC, 2) AS correlation
+FROM laptops;```
 
 | correlation |
 |-------------|
