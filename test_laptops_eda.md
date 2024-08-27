@@ -8,11 +8,12 @@ SET search_path to laptop_schema;
 - Q1: Average price of laptops for each brand
  What is the average price of laptops for each brand?
 
-
-```SELECT brand, ROUND(AVG(price), 2) AS avg_price
+```
+SELECT brand, ROUND(AVG(price), 2) AS avg_price
 FROM laptops
 GROUP BY brand
-ORDER BY avg_price DESC;```
+ORDER BY avg_price DESC;
+```
 
 
 | brand     | avg_price |
