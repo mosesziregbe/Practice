@@ -5,10 +5,10 @@ SET search_path to laptop_schema;
 /******* A. Price and Value Analysis *******/
 
 
-- Q1: Average price of laptops for each brand
+- **Q1: Average price of laptops for each brand**
 - What is the average price of laptops for each brand?
 
-```
+```sql
 SELECT brand, ROUND(AVG(price), 2) AS avg_price
 FROM laptops
 GROUP BY brand
@@ -53,10 +53,10 @@ ORDER BY avg_price DESC;
 
 
    
-- Q2: Correlation between price and spec score
+- **Q2: Correlation between price and spec score**
 - What is the correlation between price and spec score?
 
-```
+```sql
 SELECT ROUND(CORR(price, spec_score)::NUMERIC, 2) AS correlation
 FROM laptops;
 ```
@@ -68,12 +68,11 @@ FROM laptops;
 
 
 
--- Q3: Price difference between NVIDIA and other graphics cards
+- **Q3: Price difference between NVIDIA and other graphics cards**
+-  Is there a significant price difference between laptops with NVIDIA graphics cards and those with other graphics card?
 
--- Is there a significant price difference between laptops with 
--- NVIDIA graphics cards and those with other graphics card?
-
-```SELECT 
+```sql
+SELECT 
     CASE 
         WHEN graphics_card LIKE '%NVIDIA%' THEN 'NVIDIA Graphics'
         ELSE 'Other Graphics'
@@ -85,7 +84,8 @@ GROUP BY
     CASE 
         WHEN graphics_card LIKE '%NVIDIA%' THEN 'NVIDIA Graphics'
         ELSE 'Other Graphics'
-    END;```
+    END;
+```
 
 | graphics_type   | laptop_count | average_price |
 |-----------------|--------------|---------------|
