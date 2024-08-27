@@ -5,8 +5,8 @@ SET search_path to laptop_schema;
 /******* A. Price and Value Analysis *******/
 
 
--- Q1: Average price of laptops for each brand
--- What is the average price of laptops for each brand?
+- Q1: Average price of laptops for each brand
+ What is the average price of laptops for each brand?
 
 
 ```SELECT brand, ROUND(AVG(price), 2) AS avg_price
