@@ -222,7 +222,7 @@ LIMIT 5;
 | Microsoft | 4.4              |
 | Tecno     | 4.4              |
 
-   
+
    
 -- Q8: Brand offering the highest number of Gaming laptops
 -- Which brand offers the highest number of Gaming laptops?
