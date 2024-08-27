@@ -51,7 +51,7 @@ ORDER BY avg_price DESC;
 | iBall     | 8000.00   |
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    
 - **Q2: Correlation between price and spec score**
 - What is the correlation between price and spec score?
@@ -65,9 +65,7 @@ FROM laptops;
 |-------------|
 | 0.73        |
 
-
-
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 - **Q3: Price difference between NVIDIA and other graphics cards**
 -  Is there a significant price difference between laptops with NVIDIA graphics cards and those with other graphics card?
@@ -87,13 +85,14 @@ GROUP BY
         ELSE 'Other Graphics'
     END;
 ```
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 | graphics_type   | laptop_count | average_price |
 |-----------------|--------------|---------------|
 | Other Graphics  | 652          | 64125.52      |
 | NVIDIA Graphics | 368          | 122242.23     |
 
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 -- Based on the output, there is a substantial price difference 
 -- between laptops with NVIDIA graphics cards and those with 
@@ -104,8 +103,7 @@ GROUP BY
 -- nearly double the price, suggesting that NVIDIA graphics cards are associated 
 -- with higher-end, more expensive laptop models.
 
-   
-   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    
 -- Q4: Most common OS in laptops priced over 100,000
 -- Which operating system is most common among laptops priced over 100,000?
@@ -116,6 +114,7 @@ WHERE price > 100000
 GROUP BY os
 ORDER BY laptop_count DESC;
 
+&nbsp;&nbsp;&nbsp;&nbsp;
 
 | os         | laptop_count |
 |------------|--------------|
@@ -125,8 +124,7 @@ ORDER BY laptop_count DESC;
 | Unknown    | 1            |
 | Windows    | 1            |
 
-   
-   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    
 -- Q5: Relationship between RAM capacity and price
 -- What is the relationship between RAM capacity and price?
