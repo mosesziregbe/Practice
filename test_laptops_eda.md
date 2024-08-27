@@ -51,7 +51,8 @@ ORDER BY avg_price DESC;
 | iBall     | 8000.00   |
 
 
-<hr style="width: 10px;">
+
+
    
 - **Q2: Correlation between price and spec score**
 - What is the correlation between price and spec score?
@@ -66,7 +67,8 @@ FROM laptops;
 | 0.73        |
 
 
----
+
+
 
 - **Q3: Price difference between NVIDIA and other graphics cards**
 -  Is there a significant price difference between laptops with NVIDIA graphics cards and those with other graphics card?
